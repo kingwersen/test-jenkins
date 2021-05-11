@@ -4,6 +4,10 @@ pipeline {
     }
 
     stages {
+        stage('Clear cache'){
+            sh "rm -r $jenkins_home/org.jenkinsci.plugins.github_branch_source.GitHubSCMProbe.cache"
+        }
+
         stage('Clone') {
             steps {
                 git(
