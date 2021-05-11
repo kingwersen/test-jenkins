@@ -4,6 +4,7 @@ pipeline {
     }
 
     stages {
+        /*
         stage('Clone') {
             steps {
                 git(
@@ -12,6 +13,7 @@ pipeline {
                 )
             }
         }
+        */
         
         stage('Build') {
             steps {
