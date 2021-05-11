@@ -38,6 +38,7 @@ pipeline {
             steps {
                 sh 'ls build'
                 sh './build/main'
+                sh 'printenv'
             }
         }
     }
