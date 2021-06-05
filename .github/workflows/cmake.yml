@@ -27,7 +27,7 @@ jobs:
 
       # Build with CMake
       - name: Build with CMake
-        run: 
+        run: |
           mkdir build && cd build
           cmake ..
           cmake --build .
