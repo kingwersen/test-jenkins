@@ -41,6 +41,7 @@ pipeline {
                 sh 'ls build'
                 sh './build/main'
                 sh 'printenv'
+                powershell './test.ps1 -Foo Bar'
             }
         }
     }
